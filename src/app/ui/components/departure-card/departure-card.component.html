@@ -1,0 +1,11 @@
+<article class="secondary-container py-0 mt-2">
+    <div class="row departure">
+        <div class="row me-4  gap-0">
+            <img class="large" [src]="dataSource.getImageUrlForVehicleType(departure.vehicle)">
+            <h2 class="line">{{departure.line.substring(0,2)}}</h2>
+        </div>
+
+        <h2 class="max">{{departure.direction}}</h2>
+        <h2 class="right">{{dataSource.getTimeDeparture(departure)}}</h2>
+    </div>
+</article>

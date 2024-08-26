@@ -1,0 +1,25 @@
+.departure {
+    font-size: var(--departure-size);
+    //height: calc(var(--headline-size) + 40px);
+    //line-height: 3 !important;
+    height: calc(var(--departure-size) * 1.5);
+
+
+    img {
+        height: 1em;
+        min-width: 1em;
+        width: 1em;
+        margin-right: .4268em;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 1em;
+        padding-bottom: 2px;
+        //line-height: 1.5 !important;
+    }
+
+    .line {
+        width: 1em;
+    }
+}

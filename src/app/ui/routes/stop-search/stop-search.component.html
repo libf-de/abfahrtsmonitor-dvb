@@ -1,0 +1,39 @@
+<main class="responsive">
+    <div class="medium middle-align center-align">
+        <div>
+          <i class="extra">pin_drop</i>
+          <h5>Haltestellensuche</h5>
+          <div class="space"></div>
+          <nav class="no-space">
+            <div class="max field border left-round">
+              <input [(ngModel)]="searchQuery" (keyup.enter)="doSearch()">
+            </div>
+            <button class="large right-round" (click)="doSearch()">Suchen</button>
+          </nav>
+        </div>
+      </div>
+
+      <article class="mt-3 round overflow-hidden mx-auto p-0" *ngIf="searchResults.length">
+        <ng-container *ngFor="let station of searchResults">
+            <a class="row wave p-3" [routerLink]="'/' + station.id">{{station.name}}</a>
+            <hr>
+        </ng-container>
+      </article>
+</main>
+
+<footer class="fixed surface">
+    <div class="row middle-align">
+        <a class="button transparent" routerLink="/settings">
+            <i>settings</i>
+            Einstellungen
+        </a>
+        &middot;
+        <a class="button transparent" href="/impressum.html">
+            <i>info</i>
+            Impressum
+        </a>
+    </div>
+    
+
+
+</footer>

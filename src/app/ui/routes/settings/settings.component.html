@@ -1,0 +1,56 @@
+<main class="responsive">
+    <div class="medium middle-align center-align">
+        <div>
+            <i class="extra">settings</i>
+            <h5>Einstellungen</h5>
+            <div class="space"></div>
+
+            <small class="mt-4">Voreinstellungen:</small>
+            <nav class="mt-0 mb-5 no-space middle-align">
+                <button class="border left-round" (click)="setSmall()">
+                  <span>Klein</span>
+                </button>
+                <button class="border no-round" (click)="setMedium()">
+                  <span>Mittel</span>
+                </button>
+                <button class="border right-round" (click)="setLarge()">
+                  <span>Gro&szlig;</span>
+                </button>
+              </nav>
+              
+
+            <div class="field border round mb-5">
+                <input type="number" min="1" max="999" [(ngModel)]="headerSize" (ngModelChange)="saveSettings()">
+                <span class="helper">Kopfzeile-Gr&ouml;&szlig;e</span>
+                <i>px</i>
+            </div>
+
+            <div class="field border round  mb-5">
+                <input type="number" min="1" max="999" [(ngModel)]="departureSize" (ngModelChange)="saveSettings()">
+                <span class="helper">Abfahrts-Zeile-Gr&ouml;&szlig;e</span>
+                <i>px</i>
+            </div>
+
+            <div class="field border round  mb-5">
+                <input type="number" min="1" max="999" [(ngModel)]="footerSize" (ngModelChange)="saveSettings()">
+                <span class="helper">Fu&szlig;zeile-Gr&ouml;&szlig;e</span>
+                <i>px</i>
+            </div>
+
+            <div class="field border round  mb-5">
+                <input type="number" min="1" max="10" [(ngModel)]="sidebarSize" (ngModelChange)="saveSettings()">
+                <span class="helper">Linker Streifen-Gr&ouml;&szlig;e</span>
+                <i>rem</i>
+            </div>
+
+            <div class="field mb-5">
+                <label class="switch">
+                    <input type="checkbox" [(ngModel)]="compatMode" (ngModelChange)="saveSettings()">
+                    <span class="ps-2">Kompatibilit&auml;tsmodus, falls Ansicht links abgeschnitten ist</span>
+                </label>
+            </div>
+
+            <a routerLink="/" class="button round">Zur&uuml;ck</a>
+        </div>
+    </div>
+</main>

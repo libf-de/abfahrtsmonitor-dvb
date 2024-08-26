@@ -1,0 +1,17 @@
+.time {
+    font-size: var(--footer-size);
+
+    .time-icon {
+        height: .8537em;
+        width: .8537em;
+        margin-right: .3658em;
+        font-size: var(--footer-size);
+        ---size: .8537em;
+    }
+
+    h3 {
+        font-size: 1em;
+        font-weight: 600;
+        color: var(--surface);
+    }
+}

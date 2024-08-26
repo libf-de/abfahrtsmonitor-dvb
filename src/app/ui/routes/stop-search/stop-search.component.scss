@@ -1,0 +1,12 @@
+main {
+    background-color: var(--surface);
+    max-inline-size: unset;
+}
+
+article {
+    max-inline-size: 20rem;
+}
+
+hr:last-of-type {
+    display: none;
+}

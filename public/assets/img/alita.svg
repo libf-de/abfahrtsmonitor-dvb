@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1">
+    <path
+       style="fill:#000000;stroke:#fdc400;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1"
+       width="67.59375"
+       height="60.347321"
+       x="3.0886424"
+       y="3.4450243"
+       d="m 13.088642,3.4450243 h 47.59375 a 10,10 45 0 1 10,9.9999997 v 40.347321 a 10,10 135 0 1 -10,10 h -47.59375 a 10,10 45 0 1 -9.9999996,-10 V 13.445024 A 10,10 135 0 1 13.088642,3.4450243 Z"
+       transform="matrix(1.4165565,0,0,1.5785985,-2.2504017,-3.0704124)" />
+    <path
+       style="font-weight:600;font-stretch:condensed;font-size:58.2083px;font-family:'Saira Condensed';-inkscape-font-specification:'Saira Condensed,  Semi-Bold Condensed';letter-spacing:-1.85208px;fill:#fdc400;stroke-width:3"
+       d="M 16.136019,70.023651 V 36.14642 H 8.1032738 V 29.97634 H 30.746303 v 6.17008 h -7.974537 v 33.877231 z m 33.072868,0 -1.920874,-9.080495 H 37.043351 l -1.862665,9.080495 H 28.486731 L 37.45081,29.97634 h 9.604369 l 8.964079,40.047311 z m -6.86858,-33.469773 h -0.34925 l -3.725331,18.452031 h 7.741704 z m 33.131159,33.469773 -6.228289,-15.07595 h -0.407458 l -6.111872,15.07595 H 55.622435 L 64.70293,49.883579 55.738851,29.97634 h 7.276038 l 6.053663,14.610283 H 69.47601 L 75.587882,29.97634 h 6.984996 l -8.789453,19.732614 8.964078,20.314697 z m 9.731341,0 V 29.97634 h 6.693954 v 40.047311 z"
+       id="text1"
+       aria-label="TAXI" />
+  </g>
+</svg>

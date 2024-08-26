@@ -1,0 +1,47 @@
+<nav class="left primary" [class.compat-mode]="compatMode">
+    <a class="button circle small transparent" routerLink="/">
+        <i class="tiny">arrow_back</i>
+        <div class="tooltip right">Zur&uuml;ck zur Haltestellensuche</div>
+    </a>
+    <div class="max"></div>
+    <a class="button circle small transparent" href="/impressum.html">
+        <i class="tiny">info</i>
+        <div class="tooltip right">Impressum</div>
+    </a>
+</nav>
+
+<header class="surface fixed" [class.compat-mode]="compatMode">
+    <div class="row headline-container my-3 ">
+        <!-- <img src="https://dfi.dvb.de/assets/img/stop-circle.svg" class="stop-icon my-4 ms-4" (click)="openFullscreen()"> -->
+        <img src="assets/img/stop.svg" class="stop-icon ms-4" (click)="openFullscreen()">
+        <h1 class="stop-headline">{{data?.stationName}}</h1>
+    </div>
+</header>
+
+<main class="ps-4 responsive gap-2" [class.compat-mode]="compatMode">
+    <div class="departure-header row">
+        <h2 class="line">Linie</h2>
+        <h2 class="direction max">Richtung</h2>
+        <h2 class="right">in Min</h2>
+    </div>
+    <app-departure-card *ngFor="let dep of data?.departures" [departure]="dep"></app-departure-card>
+
+    <!-- <article class="py-2" >
+      <ng-container *ngFor="let dep of data?.departures">
+        <div class="row departure">
+          <div class="row me-4">
+            <img class="circle large me-2" [src]="dataSource.getImageUrlForVehicleType(dep.vehicle)">
+            <h2>{{dep.line.substring(0,2)}}</h2>
+          </div>
+    
+          <h2 class="max">{{dep.direction}}</h2>
+          <h2 class="right">{{dataSource.getTimeDeparture(dep)}}</h2>
+        </div>
+        <hr>
+      </ng-container>
+    </article> -->
+</main>
+
+<footer class="ps-4 fixed primary" [class.compat-mode]="compatMode">
+    <app-time-footer></app-time-footer>
+</footer>

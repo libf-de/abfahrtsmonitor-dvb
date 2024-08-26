@@ -1,0 +1,12 @@
+main {
+    background-color: var(--surface);
+    max-inline-size: unset;
+}
+
+.field {
+    i {
+        font-family: unset !important;
+        font-size: unset;
+        border-radius: none !important;
+    }
+}
