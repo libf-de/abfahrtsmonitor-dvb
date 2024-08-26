@@ -4,6 +4,11 @@ This is a recreation of [DVB Abfahrtsmonitor](https://www.dvb.de/de-de/service/g
 ## Story
 I'm always late, so I wanted an always-on monitor showing me departure times of the bus stop next to my home. I had an old Nexus 7 tablet laying around which I wanted to use for this purpose. As I couldn't find an app that always shows current departure times for a given station (with all platforms visible at once), I decided to recreate DVBs own webapp which they sadly only provide to commercial customers. So if you want to repurpose an old tablet into such a monitor, this is for you.
 
+## How to use
+You can visit the root url to search for stations and adjust settings, or directly add a VVO station id to the url to view it.
+In the settings you can adjust font sizes or enable compatibility mode if your Chrome is too old to support `padding-inline-start` correctly (the contents will clip into the left sidebar).
+In the departures-view you can click the (H) icon to enter fullscreen.
+
 ## Technology
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
 It uses the awesome [BeerCSS](https://www.beercss.com/) for the frontend, and fetches data from VVO API (thanks to [kiliankoe/vvo](https://github.com/kiliankoe/vvo)).
