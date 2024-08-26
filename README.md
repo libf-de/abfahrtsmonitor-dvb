@@ -1,27 +1,15 @@
-# DvbMonitorAngular
+# Abfahrtsmonitor
+This is a recreation of [DVB Abfahrtsmonitor](https://www.dvb.de/de-de/service/geschaeftskunden/abfahrtsmonitor/) in Material3 design. Find my running instance [here](https://libf.de/am/).
 
+## Story
+I'm always late, so I wanted an always-on monitor showing me departure times of the bus stop next to my home. I had an old Nexus 7 tablet laying around which I wanted to use for this purpose. As I couldn't find an app that always shows current departure times for a given station (with all platforms visible at once), I decided to recreate DVBs own webapp which they sadly only provide to commercial customers. So if you want to repurpose an old tablet into such a monitor, this is for you.
+
+## Technology
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
+It uses the awesome [BeerCSS](https://www.beercss.com/) for the frontend, and fetches data from VVO API (thanks to [kiliankoe/vvo](https://github.com/kiliankoe/vvo)).
 
-## Development server
-
+### Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Build
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. You might need to adjust the `<base href="">` in `src/index.html`.
